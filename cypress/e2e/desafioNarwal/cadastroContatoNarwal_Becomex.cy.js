@@ -3,7 +3,7 @@
 import loc from '../../support/locators_NarwalBecomex'
 
 //Acessa a página de cadastro de contato
-describe("Dado que o usuário acessa o site", () => {
+describe("Dado que o usuário acessa a pagina de cadastro:", () => {
   beforeEach(() => {
     cy.visit("https://www.narwalsistemas.com.br/becomex/", { timeout: 30000 });
     cy.get(
@@ -11,8 +11,8 @@ describe("Dado que o usuário acessa o site", () => {
     ).click();
   });
 
-  //Preenche o campos de cadastro e valida campo telefone
-  it("Então preencho os campos obrigatórios e valido o campo telefone", () => {
+  //Preenche o campos de cadastro e valida o campo telefone
+  it("Então preenche os campos obrigatórios e valida o campo telefone", () => {
     cy.get(loc.FIELDS.NAME)
       .type("FakeName")
       .should("have.value", "FakeName");
@@ -37,7 +37,7 @@ describe("Dado que o usuário acessa o site", () => {
   });
 
   //Preenche o campos de cadastro e valida campo e-mail
-  it("Então preencho os campos obrigatórios e valido o campo e-mail", () => {
+  it("Então preenche os campos obrigatórios e valida o campo e-mail", () => {
     cy.get(loc.FIELDS.NAME)
       .type("FakeName")
       .should("have.value", "FakeName");
@@ -59,7 +59,7 @@ describe("Dado que o usuário acessa o site", () => {
   });
 
   //Preenche os campos do formulário e envia
-  it("Em seguida, preencho os campos obrigatórios e envio o formulário", () => {
+  it("Em seguida, preenche os campos obrigatórios e envia o formulário", () => {
     cy.get(loc.FIELDS.NAME)
       .type("FakeName")
       .should("have.value", "FakeName");

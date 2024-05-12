@@ -4,7 +4,7 @@ import loc from '../../support/locators_NarwalBecomex'
 import loca from '../../support/locatorsN'
 
 //Acessa a página de cadastro de contato
-describe("Dado que o usuário acessa o site", () => {
+describe("Dado que o usuário acessa o pagina de cadastro:", () => {
   beforeEach(() => {
     cy.visit("https://www.narwalsistemas.com.br/contato/", { timeout: 30000 });
     cy.get(
@@ -13,7 +13,7 @@ describe("Dado que o usuário acessa o site", () => {
   });
 
   //Valida se os campos obrigatórios foram preenchidos
-  it("Então envio o formulário sem preencher nenhum campo texto", () => {
+  it("Então envia o formulário sem preencher nenhum campo texto", () => {
     cy.get(loca.BOTAO.ENVIAR).click();
     cy.get(loca.MSN_ERRO.CPNOME)
       .should('be.visible')
@@ -36,7 +36,7 @@ describe("Dado que o usuário acessa o site", () => {
   
 
   //Preenche os campos do formulário e envia
-  it("E preencho todos os campos do formulário e envio", () => {
+  it("E preenche todos os campos do formulário e envia o formulário", () => {
     cy.get(loca.CAMPO.NOME)
       .type("Nome Fake")
       .should("have.value", "Nome Fake");
