@@ -26,7 +26,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{token}}",
+							"value": "{{novotoken}}",
 							"type": "string"
 						}
 					]
@@ -81,7 +81,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{token}}",
+							"value": "{{novotoken}}",
 							"type": "string"
 						}
 					]
@@ -122,7 +122,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{token}}",
+							"value": "{{novotoken}}",
 							"type": "string"
 						}
 					]
@@ -131,7 +131,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"teste\",\r\n    \"body\":\"This is your first Issue\"\r\n}",
+					"raw": "{\r\n    \"title\":\"Issue teste\",\r\n    \"body\":\"This is your first Issue\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -164,7 +164,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{token}}",
+							"value": "{{novotoken}}",
 							"type": "string"
 						}
 					]
@@ -209,7 +209,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{token}}",
+							"value": "{{novotoken}}",
 							"type": "string"
 						}
 					]
@@ -247,6 +247,10 @@
 		{
 			"key": "token",
 			"value": "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"
+		},
+		{
+			"key": "novotoken",
+			"value": "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"
 		}
 	]
 }
